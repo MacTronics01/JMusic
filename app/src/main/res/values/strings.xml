@@ -6,5 +6,8 @@
     values-round/strings.xml for round devices.
     -->
     <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_premium">PremiumActivity</string>
+    <string name="premium_description">First month free with subscription . Prepaid plans available . Ad-free music . Download to listen offline . Unlimited skips . On-demand playback . Cancel anytime</string>
+    <string name="price_per_month">Only #900/month after.Offer only for users who are new to premium.</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
