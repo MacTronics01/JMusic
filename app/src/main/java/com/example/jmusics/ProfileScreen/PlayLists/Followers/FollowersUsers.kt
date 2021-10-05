@@ -1,4 +1,4 @@
-package com.example.jmusics.Followers
+package com.example.jmusics.ProfileScreen.PlayLists.Followers
 
 class FollowersUsers(profile_pic:Int,username:String,numoffollowers:String) {
     private var profile_pic:Int

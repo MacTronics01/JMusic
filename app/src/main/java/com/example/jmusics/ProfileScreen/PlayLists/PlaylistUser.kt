@@ -1,4 +1,4 @@
-package com.example.jmusics.PlayLists
+package com.example.jmusics.ProfileScreen.PlayLists
 
 class PlaylistUser(image:Int,song:String,numSong:String) {
 

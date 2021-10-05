@@ -1,11 +1,10 @@
-package com.example.jmusics.Followers
+package com.example.jmusics.ProfileScreen.PlayLists.Followers
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.jmusics.PlayLists.PlaylistAdapter
 import com.example.jmusics.R
 import de.hdodenhof.circleimageview.CircleImageView
 
@@ -18,7 +17,7 @@ class FolowersAdapters(private val followersList:ArrayList<FollowersUsers>): Rec
 
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.followers_card, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.followers_item, parent, false)
         return ViewHolder(view)
     }
     override fun onBindViewHolder(holder: FolowersAdapters.ViewHolder, position: Int) {

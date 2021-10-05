@@ -1,4 +1,4 @@
-package com.example.jmusics.TopTrack
+package com.example.jmusics.ProfileScreen.PlayLists.TopTrack
 
 import android.view.LayoutInflater
 import android.view.View
@@ -21,7 +21,7 @@ class TrackAdapter(private val trackList:ArrayList<TrackUser>): RecyclerView.Ada
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-      val view=LayoutInflater.from(parent.context).inflate(R.layout.top_track_card,parent,false)
+      val view=LayoutInflater.from(parent.context).inflate(R.layout.top_track_item,parent,false)
         return ViewHolder(view)
     }
 

@@ -1,4 +1,4 @@
-package com.example.jmusics.TopTrack
+package com.example.jmusics.ProfileScreen.PlayLists.TopTrack
 
 class TrackUser(image:Int, artist:String,name_of_song:String,num_of_play:String,num_of_love:String,num_of_re_up:String)
 {

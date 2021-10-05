@@ -1,4 +1,4 @@
-package com.example.jmusics.PlayLists
+package com.example.jmusics.ProfileScreen.PlayLists
 
 import android.view.LayoutInflater
 import android.view.View
@@ -17,7 +17,7 @@ class PlaylistAdapter(private val playList:ArrayList<PlaylistUser>): RecyclerVie
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.play_list_card, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.play_list_item, parent, false)
         return ViewHolder(view)
     }
 

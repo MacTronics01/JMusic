@@ -1,15 +1,16 @@
-package com.example.jmusics
+package com.example.jmusics.ProfileScreen.PlayLists
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.jmusics.Followers.FollowersUsers
-import com.example.jmusics.Followers.FolowersAdapters
-import com.example.jmusics.PlayLists.PlaylistAdapter
-import com.example.jmusics.PlayLists.PlaylistUser
-import com.example.jmusics.TopTrack.TrackAdapter
-import com.example.jmusics.TopTrack.TrackUser
+import com.example.jmusics.ProfileScreen.PlayLists.Followers.FollowersUsers
+import com.example.jmusics.ProfileScreen.PlayLists.Followers.FolowersAdapters
+import com.example.jmusics.ProfileScreen.PlayLists.PlaylistAdapter
+import com.example.jmusics.ProfileScreen.PlayLists.PlaylistUser
+import com.example.jmusics.ProfileScreen.PlayLists.TopTrack.TrackAdapter
+import com.example.jmusics.ProfileScreen.PlayLists.TopTrack.TrackUser
+import com.example.jmusics.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
