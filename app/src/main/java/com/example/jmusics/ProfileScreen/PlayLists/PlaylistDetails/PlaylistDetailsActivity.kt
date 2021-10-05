@@ -18,7 +18,31 @@ class PlaylistDetailsActivity : AppCompatActivity() {
 
         val PlaylistDetail=ArrayList<PlaylistDetailsUsers>()
 
-        playlistDetail=
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+        PlaylistDetail.add(PlaylistDetailsUsers(R.drawable.track4,"Feels the love","Wiskid"))
+
+        val adapter=PlaylistDetailsAdapter(PlaylistDetail)
+        playlistDetail.adapter=adapter
 
 
     }

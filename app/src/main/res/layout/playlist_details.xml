@@ -220,9 +220,12 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/round_buton"
-        android:drawableLeft="@drawable/play_icon"
         android:text="Play playlist"
+        app:icon="@drawable/play_icon"
+        app:iconGravity="textStart"
+        app:iconTint="@color/yellowish_black"
         android:textAllCaps="false"
+        app:iconSize="30dp"
         android:textColor="@color/white"
         android:textSize="12sp"
         android:textStyle="bold"
@@ -235,9 +238,12 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="25dp"
+        app:iconSize="30dp"
         android:background="@drawable/round_buton"
-        android:drawableLeft="@drawable/ic_shuffle"
         android:text="Shuffle"
+        app:icon="@drawable/ic_shuffle"
+        app:iconTint="@color/yellowish_black"
+        app:iconGravity="textStart"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="12sp"
@@ -258,4 +264,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialButton" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:background="@drawable/round_buton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:icon="@drawable/baseline_maps_ugc_24"
+        app:iconTint="@color/yellowish_black"
+        app:iconGravity="textStart"
+        android:text="234 Comments"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playlist_details"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
