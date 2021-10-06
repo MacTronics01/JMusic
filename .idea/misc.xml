@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/favorite_filled.xml" value="0.1665" />
+        <entry key="app/src/main/res/drawable-v24/ic_loop_on.xml" value="0.1665" />
+        <entry key="app/src/main/res/drawable-v24/ic_shuffle.xml" value="0.1665" />
+        <entry key="app/src/main/res/drawable-v24/play_icon.xml" value="0.1665" />
         <entry key="app/src/main/res/drawable/copy_icon.xml" value="0.1665" />
         <entry key="app/src/main/res/drawable/fb_icon.xml" value="0.1665" />
         <entry key="app/src/main/res/drawable/instagram.xml" value="0.11" />
@@ -11,17 +15,21 @@
         <entry key="app/src/main/res/drawable/tweeter_icon.xml" value="0.1665" />
         <entry key="app/src/main/res/drawable/via_text_icon.xml" value="0.1665" />
         <entry key="app/src/main/res/drawable/whatsapp.xml" value="0.1665" />
+        <entry key="app/src/main/res/layout/activity_following.xml" value="0.15833333333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_premium.xml" value="0.15833333333333333" />
-        <entry key="app/src/main/res/layout/albums_items.xml" value="0.15833333333333333" />
+        <entry key="app/src/main/res/layout/albums_items.xml" value="0.25" />
         <entry key="app/src/main/res/layout/botom_sheet.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/followers_item.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.15833333333333333" />
         <entry key="app/src/main/res/layout/plan_items.xml" value="0.2" />
         <entry key="app/src/main/res/layout/play_list_item.xml" value="0.15833333333333333" />
         <entry key="app/src/main/res/layout/playlist_details.xml" value="0.18" />
         <entry key="app/src/main/res/layout/playlist_details_items.xml" value="0.15833333333333333" />
+        <entry key="app/src/main/res/layout/recently_added_items.xml" value="0.15833333333333333" />
         <entry key="app/src/main/res/layout/shear_items.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/top_album_chart_item.xml" value="0.15833333333333333" />
-        <entry key="app/src/main/res/layout/top_track_item.xml" value="0.15833333333333333" />
+        <entry key="app/src/main/res/layout/top_album_chart_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/top_track_item.xml" value="0.25" />
       </map>
     </option>
   </component>
