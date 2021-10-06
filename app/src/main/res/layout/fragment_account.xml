@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#72BBF4"
+    android:background="@color/black"
     tools:context=".Account">
 
     <ImageView
@@ -17,22 +17,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/profile"
-        android:layout_width="40dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="60dp"
-        android:src="@drawable/ic_baseline_arrow_right"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
-        android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
         android:text="Account"
-        android:textColor="@color/white"
+        android:textColor="@color/light_blue"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView16"
@@ -52,7 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log In / Sign Up"
-        android:textColor="@color/white"
+        android:textColor="@color/light_blue"
         android:textSize="17sp"
         android:layout_marginStart="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/circleImageView5"
@@ -62,9 +52,9 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_height="400dp"
         android:layout_marginTop="40dp"
-        app:cardBackgroundColor="@color/black"
+        app:cardBackgroundColor="@color/grey"
         app:cardCornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,8 +73,7 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_right"
                 android:gravity="center_vertical"
                 android:text="Notifications"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
                 app:cornerRadius="10dp"
                 app:icon="@drawable/ic_baseline_notifications"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -98,9 +87,8 @@
                 android:layout_margin="10dp"
                 android:drawableEnd="@drawable/ic_baseline_arrow_right"
                 android:gravity="center_vertical"
-                android:backgroundTint="@color/black"
                 android:text="subscribe"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 app:icon="@drawable/ic_baseline_subscriptions"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -114,8 +102,7 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_right"
                 android:gravity="center_vertical"
                 android:text="I'm an artist"
-                android:backgroundTint="@color/black"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 app:icon="@drawable/ic_baseline_person"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -129,8 +116,7 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_right"
                 android:gravity="center_vertical"
                 android:text="settings"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
                 app:icon="@drawable/ic_settings"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -144,8 +130,7 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_right"
                 android:gravity="center_vertical"
                 android:text="Invite Friends"
-                android:textColor="@color/white"
-                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
                 app:icon="@drawable/ic_invite_friends"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -158,8 +143,7 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_right"
                 android:gravity="center_vertical"
                 android:text="Help"
-                android:backgroundTint="@color/black"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 app:icon="@drawable/ic_baseline_help_24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -169,9 +153,18 @@
 
     </androidx.cardview.widget.CardView>
 
-
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:textColor="@color/light_blue"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
