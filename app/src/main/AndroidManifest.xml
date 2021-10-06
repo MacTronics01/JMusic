@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JMusics">
-        <activity android:name=".ProfileScreen.PlayLists.Following.Following"></activity>
+        <activity android:name=".ProfileScreen.PlayLists.Details"></activity>
+        <activity android:name=".ProfileScreen.PlayLists.Profile" />
+        <activity android:name=".ProfileScreen.PlayLists.Following.Following" />
         <activity
             android:name=".ProfileScreen.PlayLists.PlaylistDetails.PlaylistDetailsActivity"
             android:label="@string/title_activity_playlist_details">
