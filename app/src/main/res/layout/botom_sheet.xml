@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/grey">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/track4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Feel Love"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:text="Wiskid"
+                android:textColor="@color/light_blue"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageView17"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="50dp"
+                        android:src="@drawable/baseline_favorite_border_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="100dp"
+                        android:src="@drawable/playlist_icon"
+                        app:layout_constraintStart_toEndOf="@+id/imageView17"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="50dp"
+                        android:src="@drawable/baseline_maps_ugc_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView18"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Favorite"
+                        android:textColor="@color/light_grey"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView17"
+                        app:layout_constraintStart_toStartOf="@+id/imageView17"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Playlist"
+                        android:textColor="@color/light_grey"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+                        app:layout_constraintStart_toStartOf="@+id/imageView18"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comments"
+                        android:textColor="@color/light_grey"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+                        app:layout_constraintStart_toStartOf="@+id/imageView19"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton7"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Copy Link"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:icon="@drawable/copy_icon"
+        app:iconTint="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton7" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton8"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Twitter"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:icon="@drawable/tweeter_icon"
+        app:iconTint="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton8" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton9"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_height="80dp"
+        android:text="Facebook"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:icon="@drawable/fb_icon"
+        app:iconTint="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton8" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton9" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton10"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Via Text"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:icon="@drawable/via_text_icon"
+        app:iconTint="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton9" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton10" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton11"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Whatsapp"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:icon="@drawable/whatsapp"
+        app:iconTint="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton10" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton11" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton12"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Messenger"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:icon="@drawable/msg_icon"
+        app:iconTint="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton11" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton12" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton13"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="More"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:icon="@drawable/more_icon"
+        app:iconTint="@color/light_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton12"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

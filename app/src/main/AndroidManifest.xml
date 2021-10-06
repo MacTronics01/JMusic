@@ -11,7 +11,7 @@
         android:theme="@style/Theme.JMusics">
         <activity android:name=".ProfileScreen.PlayLists.Following.Following"></activity>
         <activity
-            android:name=".ProfileScreen.PlayLists.PlaylistDetails.PlaylistDetailsActivity"
+            android:name=".ProfileScreen.PlayLists.MainActivity"
             android:label="@string/title_activity_playlist_details">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ProfileScreen.PlayLists.MainActivity">
+        <activity android:name=".ProfileScreen.PlayLists.PlaylistDetails.PlaylistDetailsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

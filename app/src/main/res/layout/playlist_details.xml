@@ -267,7 +267,7 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="300dp"
         android:layout_height="55dp"
-        android:background="@drawable/round_buton"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:icon="@drawable/baseline_maps_ugc_24"
         app:iconTint="@color/yellowish_black"
