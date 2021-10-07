@@ -7,7 +7,7 @@
     android:background="@color/black">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
+        android:id="@+id/bottomSheetCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/grey"
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="35dp"
-                android:text="Wiskid"
+                android:text="Wizkid"
                 android:textColor="@color/light_blue"
                 android:textSize="16sp"
                 android:textStyle="normal"
@@ -98,6 +98,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
+                        android:id="@+id/favourite"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Favorite"
@@ -109,7 +110,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/imageView17" />
 
                     <TextView
-                        android:id="@+id/textView30"
+                        android:id="@+id/playlist"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Playlist"
@@ -121,6 +122,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/imageView18" />
 
                     <TextView
+                        android:id="@+id/comments"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Comments"
@@ -138,7 +140,7 @@
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton7"
+        android:id="@+id/copylink"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -153,7 +155,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+        app:layout_constraintTop_toBottomOf="@+id/bottomSheetCardView" />
 
     <View
         android:id="@+id/divider"
@@ -163,10 +165,10 @@
         app:layout_constraintBottom_toTopOf="@+id/materialButton8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton7" />
+        app:layout_constraintTop_toBottomOf="@+id/copylink" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton8"
+        android:id="@+id/twitter"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -187,13 +189,13 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/materialButton9"
+        app:layout_constraintBottom_toTopOf="@+id/facebook"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/twitter" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton9"
+        android:id="@+id/facebook"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_height="80dp"
         android:text="Facebook"
@@ -206,20 +208,20 @@
         app:iconTint="@color/light_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/twitter" />
 
     <View
         android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/materialButton10"
+        app:layout_constraintBottom_toTopOf="@+id/textMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton9" />
+        app:layout_constraintTop_toBottomOf="@+id/facebook" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton10"
+        android:id="@+id/textMessage"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -233,20 +235,20 @@
         app:iconTint="@color/light_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton9" />
+        app:layout_constraintTop_toBottomOf="@+id/facebook" />
 
     <View
         android:id="@+id/divider3"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/materialButton11"
+        app:layout_constraintBottom_toTopOf="@+id/whatsapp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton10" />
+        app:layout_constraintTop_toBottomOf="@+id/textMessage" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton11"
+        android:id="@+id/whatsapp"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -260,20 +262,20 @@
         app:iconTint="@color/light_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton10" />
+        app:layout_constraintTop_toBottomOf="@+id/textMessage" />
 
     <View
         android:id="@+id/divider4"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/materialButton12"
+        app:layout_constraintBottom_toTopOf="@+id/messenger"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton11" />
+        app:layout_constraintTop_toBottomOf="@+id/whatsapp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton12"
+        android:id="@+id/messenger"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -287,20 +289,20 @@
         app:iconTint="@color/light_blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton11" />
+        app:layout_constraintTop_toBottomOf="@+id/whatsapp" />
 
     <View
         android:id="@+id/divider5"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="@color/grey"
-        app:layout_constraintBottom_toTopOf="@+id/materialButton13"
+        app:layout_constraintBottom_toTopOf="@+id/more"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton12" />
+        app:layout_constraintTop_toBottomOf="@+id/messenger" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton13"
+        android:id="@+id/more"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -315,7 +317,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialButton12"
+        app:layout_constraintTop_toBottomOf="@+id/messenger"
         />
 
 

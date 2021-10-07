@@ -8,7 +8,7 @@
     tools:context=".ProfileScreen.PlayLists.Following.Following">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView3"
+        android:id="@+id/followingImage"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
@@ -26,20 +26,22 @@
         android:textColor="@color/white"
         android:layout_marginStart="10dp"
         android:layout_marginTop="35dp"
-        app:layout_constraintStart_toEndOf="@+id/circleImageView3"
+        app:layout_constraintStart_toEndOf="@+id/followingImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/numOfFollowers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:text="1M Followers"
         android:textColor="@color/white"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/circleImageView3"
+        app:layout_constraintStart_toEndOf="@+id/followingImage"
         app:layout_constraintTop_toBottomOf="@+id/followingTitle" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/followingBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"

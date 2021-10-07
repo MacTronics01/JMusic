@@ -9,7 +9,7 @@
     tools:context=".Account">
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -25,30 +25,30 @@
         android:textColor="@color/light_blue"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="@+id/back"
         app:layout_constraintTop_toTopOf="parent" />
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView5"
+        android:id="@+id/accountImage"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/track5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+        app:layout_constraintTop_toBottomOf="@+id/back" />
 
     <TextView
-        android:id="@+id/textView46"
+        android:id="@+id/LoginAndSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:text="Log In / Sign Up"
         android:textColor="@color/light_blue"
         android:textSize="17sp"
-        app:layout_constraintBottom_toBottomOf="@+id/circleImageView5"
-        app:layout_constraintStart_toEndOf="@+id/circleImageView5"
-        app:layout_constraintTop_toTopOf="@+id/circleImageView5" />
+        app:layout_constraintBottom_toBottomOf="@+id/accountImage"
+        app:layout_constraintStart_toEndOf="@+id/accountImage"
+        app:layout_constraintTop_toTopOf="@+id/accountImage" />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="150dp"
@@ -61,10 +61,10 @@
         app:iconGravity="textStart"
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+        app:layout_constraintTop_toBottomOf="@+id/LoginAndSignup" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/AccountCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -72,14 +72,14 @@
         app:cardCornerRadius="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circleImageView5">
+        app:layout_constraintTop_toBottomOf="@+id/accountImage">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/materialButton2"
+                android:id="@+id/notificationBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -96,7 +96,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/materialButton90"
+                android:id="@+id/songsBtn"
                 android:layout_width="391dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
@@ -105,7 +105,7 @@
                 android:clickable="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/materialButton2">
+                app:layout_constraintTop_toBottomOf="@+id/notificationBtn">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="391dp"
@@ -156,7 +156,7 @@
 
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/materialButton97"
+                android:id="@+id/albumsBtn"
                 android:layout_width="391dp"
                 android:layout_height="40dp"
                 android:background="?attr/selectableItemBackground"
@@ -165,7 +165,7 @@
                 android:clickable="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/materialButton90">
+                app:layout_constraintTop_toBottomOf="@+id/songsBtn">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="391dp"
@@ -218,7 +218,7 @@
             </androidx.cardview.widget.CardView>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/materialButton3"
+                android:id="@+id/subscribeBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -230,10 +230,10 @@
                 app:iconTint="@color/light_blue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/materialButton97" />
+                app:layout_constraintTop_toBottomOf="@+id/albumsBtn" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/materialButton4"
+                android:id="@+id/artistBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -245,10 +245,10 @@
                 app:icon="@drawable/ic_baseline_person"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/materialButton3" />
+                app:layout_constraintTop_toBottomOf="@+id/subscribeBtn" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/materialButton5"
+                android:id="@+id/settingsBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -260,10 +260,10 @@
                 app:icon="@drawable/ic_settings"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/materialButton4" />
+                app:layout_constraintTop_toBottomOf="@+id/artistBtn" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/materialButton6"
+                android:id="@+id/inviteBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -275,9 +275,10 @@
                 app:icon="@drawable/ic_invite_friends"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/materialButton5" />
+                app:layout_constraintTop_toBottomOf="@+id/settingsBtn" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/helpBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -289,7 +290,7 @@
                 app:icon="@drawable/ic_baseline_help_24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/materialButton6" />
+                app:layout_constraintTop_toBottomOf="@+id/inviteBtn" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -297,6 +298,7 @@
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutBtn"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:text="Logout"
@@ -307,7 +309,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+        app:layout_constraintTop_toBottomOf="@+id/AccountCardView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

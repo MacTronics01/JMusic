@@ -8,7 +8,7 @@
     tools:context=".Overview">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/overviewEarning"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="?android:attr/selectableItemBackground"
@@ -58,13 +58,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+        android:id="@+id/overviewEmail"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="?android:attr/selectableItemBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        app:layout_constraintTop_toBottomOf="@+id/overviewEarning">
 
         <ImageView
             android:id="@+id/imageView18"
@@ -98,12 +98,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/overviewSubscription"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="?android:attr/selectableItemBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/overviewEmail">
 
         <ImageView
             android:id="@+id/imageView19"

@@ -8,7 +8,7 @@
     tools:context=".Bio">
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
@@ -19,19 +19,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView36"
+        android:id="@+id/nameOfUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Wizkid"
         android:textColor="@color/white"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView34"
-        app:layout_constraintStart_toEndOf="@+id/textView34"
-        app:layout_constraintTop_toTopOf="@+id/textView34" />
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@+id/name" />
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/nationality"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
@@ -39,21 +39,22 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <TextView
+        android:id="@+id/nationalityOfUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nigerian"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:layout_margin="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView35"
-        app:layout_constraintStart_toEndOf="@+id/textView35"
-        app:layout_constraintTop_toTopOf="@+id/textView35" />
+        app:layout_constraintBottom_toBottomOf="@+id/nationality"
+        app:layout_constraintStart_toEndOf="@+id/nationality"
+        app:layout_constraintTop_toTopOf="@+id/nationality" />
 
     <TextView
-        android:id="@+id/textView37"
+        android:id="@+id/gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
@@ -61,17 +62,18 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+        app:layout_constraintTop_toBottomOf="@+id/nationality" />
 
     <TextView
+        android:id="@+id/genderOfUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Male"
         android:textColor="@color/white"
         android:textSize="25sp"
         android:layout_margin="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView37"
-        app:layout_constraintStart_toEndOf="@+id/textView37"
-        app:layout_constraintTop_toTopOf="@+id/textView37" />
+        app:layout_constraintBottom_toBottomOf="@+id/gender"
+        app:layout_constraintStart_toEndOf="@+id/gender"
+        app:layout_constraintTop_toTopOf="@+id/gender" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
