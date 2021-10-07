@@ -39,20 +39,34 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView16" />
 
     <TextView
+        android:id="@+id/textView46"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:text="Log In / Sign Up"
         android:textColor="@color/light_blue"
         android:textSize="17sp"
-        android:layout_marginStart="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/circleImageView5"
         app:layout_constraintStart_toEndOf="@+id/circleImageView5"
         app:layout_constraintTop_toTopOf="@+id/circleImageView5" />
 
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/grey"
+        android:layout_marginEnd="15dp"
+        android:text="Upload"
+        app:icon="@drawable/add_icon"
+        app:iconTint="@color/light_blue"
+        app:iconGravity="textStart"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         app:cardBackgroundColor="@color/grey"
         app:cardCornerRadius="30dp"
@@ -72,6 +86,7 @@
                 android:layout_marginTop="10dp"
                 android:drawableEnd="@drawable/ic_baseline_arrow_right"
                 android:gravity="center_vertical"
+                app:iconTint="@color/light_blue"
                 android:text="Notifications"
                 android:textColor="@color/black"
                 app:cornerRadius="10dp"
@@ -79,6 +94,128 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/materialButton90"
+                android:layout_width="391dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:backgroundTint="@color/grey"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialButton2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="391dp"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/song_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Songs"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView23"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="700"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.789"
+                        app:layout_constraintStart_toEndOf="@+id/textView48"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.416" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/materialButton97"
+                android:layout_width="391dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackground"
+                android:backgroundTint="@color/grey"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialButton90">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="391dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/materialButton90">
+
+                    <ImageView
+                        android:id="@+id/imageView230"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/album_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView480"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Albums"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView230"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.789"
+                        app:layout_constraintStart_toEndOf="@+id/textView480"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.416" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/materialButton3"
@@ -90,9 +227,10 @@
                 android:text="subscribe"
                 android:textColor="@color/black"
                 app:icon="@drawable/ic_baseline_subscriptions"
+                app:iconTint="@color/light_blue"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/materialButton2" />
+                app:layout_constraintTop_toBottomOf="@+id/materialButton97" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/materialButton4"
@@ -102,6 +240,7 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_right"
                 android:gravity="center_vertical"
                 android:text="I'm an artist"
+                app:iconTint="@color/light_blue"
                 android:textColor="@color/black"
                 app:icon="@drawable/ic_baseline_person"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -116,6 +255,7 @@
                 android:drawableEnd="@drawable/ic_baseline_arrow_right"
                 android:gravity="center_vertical"
                 android:text="settings"
+                app:iconTint="@color/light_blue"
                 android:textColor="@color/black"
                 app:icon="@drawable/ic_settings"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -131,6 +271,7 @@
                 android:gravity="center_vertical"
                 android:text="Invite Friends"
                 android:textColor="@color/black"
+                app:iconTint="@color/light_blue"
                 app:icon="@drawable/ic_invite_friends"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -142,12 +283,14 @@
                 android:layout_margin="10dp"
                 android:drawableEnd="@drawable/ic_baseline_arrow_right"
                 android:gravity="center_vertical"
+                app:iconTint="@color/light_blue"
                 android:text="Help"
                 android:textColor="@color/black"
                 app:icon="@drawable/ic_baseline_help_24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/materialButton6" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
